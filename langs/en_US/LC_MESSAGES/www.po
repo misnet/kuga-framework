@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Kuga\n"
+"POT-Creation-Date: 2017-12-18 21:09+0800\n"
+"PO-Revision-Date: 2017-12-18 21:09+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ../../../apps/www\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: t._;t;_;nquery:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#~ msgid "登录"
+#~ msgstr "Sign in"
+
+#~ msgid "注册"
+#~ msgstr "Sign up"
+
+#~ msgid "会员注册"
+#~ msgstr "Registration"
+
+#~ msgid "首页"
+#~ msgstr "Home"
+
+#~ msgid "会员登录"
+#~ msgstr "Account Login"
+
+#~ msgid "手机号"
+#~ msgstr "Phone number"
+
+#~ msgid "登录密码"
+#~ msgstr "Password"
+
+#~ msgid "提交"
+#~ msgstr "Submit"
+
+#~ msgid "注册成为新会员"
+#~ msgstr "Register a new account"
+
+#~ msgid "姓名"
+#~ msgstr "Your name"
+
+#~ msgid "验证码"
+#~ msgstr "Verification code"
+
+#~ msgid "获取手机验证码"
+#~ msgstr "Get verification code"
+
+#~ msgid "男"
+#~ msgstr "Male"
+
+#~ msgid "女"
+#~ msgstr "Female"
+
+#~ msgid "同意注册协议"
+#~ msgstr "I agree Terms and Conditions"

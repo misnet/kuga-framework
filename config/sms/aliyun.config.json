@@ -1,0 +1,13 @@
+{
+  "regionId":"cn-shenzhen",
+  "appKey": "",
+  "appSecret": "",
+  "signName": "",
+  "productName": "",
+  "template": {
+    "changePasswd": "SMS_59020063",
+    "register": "SMS_59020065",
+    "verify": "SMS_59020069",
+    "devops": "SMS_59795002"
+  }
+}

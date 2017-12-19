@@ -1,0 +1,28 @@
+{
+    "name": "kuga-api-framework",
+    "description": "",
+    "keywords": [
+        "PHP", "API Gateway"
+    ],
+    "homepage": "http://github.io/misnet/",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Donny Wong",
+            "homepage":"http://www.tapy.org",
+            "email":"dony@tapy.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "anchnet/aliyun-openapi-php-sdk":"dev-master",
+        "kuga/openapi-sdk":">=0.1"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "AccessKeyId": "",
+    "AccessKeySecret": "",
+    "RoleArn": "acs:ram::1091890318479917:role/app-oss",
+    "TokenExpireTime": "3600",
+    "PolicyFile": "policy-all.txt",
+
+    "RoleSessionName": "",
+    "Bucket": {
+        "Region": "cn-shenzhen",
+        "Name": "",
+        "Endpoint": "oss-cn-shenzhen.aliyuncs.com",
+        "Host": "https://xxx.oss-cn-shenzhen.aliyuncs.com"
+    },
+    "TestBucket": {
+        "Region": "cn-shenzhen",
+        "Name": "xxx",
+        "Endpoint": "oss-cn-shenzhen.aliyuncs.com",
+        "Host": "https://xxx.oss-cn-shenzhen.aliyuncs.com"
+    }
+}

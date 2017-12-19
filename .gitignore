@@ -1,0 +1,10 @@
+.DS_Store
+.project
+.settings
+.buildpath
+var/*
+public/apidocs
+config/config.php
+config/aliyunoss/config.json
+class/composer.lock
+class/vendor

@@ -1,0 +1,22 @@
+{
+    "status": 0,
+    "data": {
+        "RequestId": "C1F6C4D1-5E82-49BB-98DC-D9D95B2727FE",
+        "AssumedRoleUser": {
+            "AssumedRoleId": "375333691559660297:artmutApp",
+            "Arn": "acs:ram::1091890318479917:role/app-oss/artmutApp"
+        },
+        "Credentials": {
+            "AccessKeySecret": "3YC8r6HZrJh8w4ZNYd1G8BxyQeUxq1UdfCsw9N31V7Kn",
+            "AccessKeyId": "STS.KjVtiUmdSbFrojpqYRqj4Mwus",
+            "Expiration": "2017-12-18T06:52:30Z",
+            "SecurityToken": "CAIS/wF1q6Ft5B2yfSjIqqnjP9PhgLty1YSZbUzBlVkHfeUYorLekTz2IH9Jf3JrB+Efs/k+mm5Q7PcdlqB6UYNAWFDtddMoYx2rWu3lMeT7oMWQweEuuv/MQBquaXPS2MvVfJ+OLrf0ceusbFbpjzJ6xaCAGxypQ12iN+/m6/Ngdc9FHHP7D1x8CcxROxFppeIDKHLVLozNCBPxhXfKB0ca3WgZgGhku6Ok2Z/euFiMzn+Ck7dE/tSgesP9P5UzbcYmDO3YhrImKvDztwdL8AVP+atMi6hJxCzKpNn1ASMKvEjdaLGKo4QycV4nOPBgSvFew/Hkjbh/offDUkhbF+aHrYgagAFu3fIrBc3cRIMpH04J330BRvPSPsrJjaFmxoD/8d2URr39N7yCEZVIm252EAOM6I78fXDfpAARlz8Yr3v3/USyUw+1j8MS7DG0/VYVFbpuCUDQCKiEHPQUpqgfali23eLMyp5fi7ZUTH5x//Kxd0AGzJT1WkOkMZMo89pNsNUpYg=="
+        },
+        "bucket": {
+            "endpoint": "oss-cn-shenzhen.aliyuncs.com",
+            "name": "voclocal",
+            "hostUrl": "https://voclocal.oss-cn-shenzhen.aliyuncs.com",
+            "region": "cn-shenzhen"
+        }
+    }
+}
