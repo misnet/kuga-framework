@@ -1,24 +1,26 @@
 {
-    "id":"console.menu.list",
-    "name":"菜单列表",
-    "description":"获取菜单列表",
+    "id":"console.role.list",
+    "name":"角色列表",
+    "description":"获取角色列表",
     "namespace":"Kuga\\Api\\Console",
-    "method":"system.listMenu",
+    "method":"acc.listRole",
     "accessLevel": 2,
     "request":[
         {
-            "param":"pid",
+            "param":"page",
             "required":false,
-            "default":0,
+            "default":1,
+            "name":"页码",
             "type":"Integer",
-            "description":"上级菜单ID"
+            "description":"页码"
         },
         {
-            "param":"rid",
+            "param":"limit",
             "required":false,
-            "default":"",
+            "default":10,
             "type":"Integer",
-            "description":"指定角色，如果有指定角色，会多返回一个allow字段，表明这个角色有没权限访问"
+            "description":"每页显示条数",
+            "name":"每页显示条数"
         }
     ],
     "response":{
@@ -30,40 +32,40 @@
                     "type":"Array",
                     "responseItem":{
 
-                        "display":{
-                            "type":"Integer",
-                            "sample":1,
-                            "description":"是否显示，1是，0不是"
-                        },
-                        "name":{
-                            "type":"String",
-                            "sample":"控制台",
-                            "description":"菜单名称"
-                        },
                         "id":{
                             "type":"Integer",
                             "sample":1,
-                            "description":"菜单ID"
+                            "description":"角色ID"
                         },
-                        "parentId":{
+                        "name":{
+                            "type":"String",
+                            "sample":"管理员",
+                            "description":"角色名称"
+                        },
+                        "roleType":{
+                            "type":"Integer",
+                            "sample":1,
+                            "description":"角色类型，1为超级管理员，0为普通角色"
+                        },
+                        "assignPolicy":{
                             "type":"Integer",
                             "sample":0,
-                            "description":"菜单父级ID"
+                            "description":"分配策略，0不自动分配，1自动分配给已登陆用户，2自动分配给未登陆用户"
                         },
-                        "url":{
-                            "type":"String",
-                            "sample":"",
-                            "description":"菜单网址"
+                        "defaultAllow":{
+                            "type":"Integer",
+                            "sample":0,
+                            "description":"默认权限，0禁止，1允许"
                         },
-                        "sortByWeight":{
+                        "priority":{
                             "type":"Integer",
                             "sample":1,
-                            "description":"排序权重"
+                            "description":"优先级，越小越优先"
                         },
-                        "allow":{
+                        "cntUser":{
                             "type":"Integer",
-                            "sample":1,
-                            "description":"指定角色时，会返回这个属性，1表示有权访问，0表示无权访问"
+                            "sample":100,
+                            "description":"用户数量"
                         }
                     },
                     "description":"数据列表"

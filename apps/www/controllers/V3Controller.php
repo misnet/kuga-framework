@@ -35,6 +35,11 @@ class V3Controller extends ControllerBase{
         if(!isset($requestData['method'])){
             $requestData['method'] = $method;
         }
+        $locale = $this->request->get('locale','string','zh_CN');
+        if($locale=='zh'){
+            $locale='zh_CN';
+        }
+        $this->getDI()->getShared('translator')->setLocale(LC_MESSAGES, $locale,$this->config->system->charset);
         $requestObject = new Request($requestData);
         $requestObject->setOrigRequest($this->request);
         ApiService::setDi($this->getDI());

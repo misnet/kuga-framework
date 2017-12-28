@@ -48,14 +48,11 @@ CREATE TABLE `t_api_logs` (
 CREATE TABLE `t_menu` (
   `id` int(11) NOT NULL,
   `name` varchar(40) NOT NULL DEFAULT '',
-  `controller` varchar(40) NOT NULL DEFAULT '',
-  `action` varchar(40) NOT NULL DEFAULT '',
-  `parameter` varchar(40) NOT NULL DEFAULT '',
+  `url` varchar(100) NOT NULL DEFAULT '' comment '菜单地址',
   `parent_id` int(11) NOT NULL DEFAULT '0',
   `sort_by_weight` int(11) NOT NULL DEFAULT '0' COMMENT '显示顺序',
   `display` enum('1','0') NOT NULL DEFAULT '1',
-  `class_name` varchar(30) DEFAULT NULL COMMENT '样式',
-  `ext_name` varchar(100) DEFAULT NULL COMMENT '所属扩展名称'
+  `class_name` varchar(30) DEFAULT NULL COMMENT '样式'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -167,8 +164,8 @@ CREATE TABLE `t_user` (
 --
 
 INSERT INTO `t_user` (`uid`, `username`, `password`, `mobile`, `email`, `token`, `create_time`, `last_visit_ip`, `last_visit_time`, `gender`, `store_id`) VALUES
-(1, 'admin', '$2y$10$n2Vz/L5Fa9C1rA14Go5KkOShcivgDQCSq8G0UkepfrP2OIrsAUh.O', '13570254857', 'dony@larkair.com', '', NULL, '', 1512526971, 1, 0),
-(4, 'dony', '$2y$10$s.taaqnsgE1UNNBuIrbN5.ffR6cVymro96foLShQT1FQIMiNeFgIK', '15859079008', 'dony@tapy.org', '', 1405906107, '127.0.0.1', 1513663170, 0, 1);
+(1, 'admin', '$2y$10$n2Vz/L5Fa9C1rA14Go5KkOShcivgDQCSq8G0UkepfrP2OIrsAUh.O', '13000011111', 'dony@larkair.com', '', NULL, '', 1512526971, 1, 0),
+(4, 'dony', '$2y$10$s.taaqnsgE1UNNBuIrbN5.ffR6cVymro96foLShQT1FQIMiNeFgIK', '15000333999', 'dony@tapy.org', '', 1405906107, '127.0.0.1', 1513663170, 0, 1);
 
 --
 -- Indexes for dumped tables

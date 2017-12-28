@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+系统会自动对title部分进行多语种翻译 
+id,code的属性只允许用英文开头，可以有英文，数字，下划线
+若有修改，请清除缓存目录var/cache-...
+-->
+<privileges>
+	<resource title="用户" code="RES_USER">
+		<op title="添加" code="OP_ADD"/>
+		<op title="编辑" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+
+	<resource title="权限系统" code="RES_ACC">
+		<op title="授权" code="OP_ASSIGN"/>
+	</resource>
+	<resource title="系统" code="RES_SYS">
+		<op title="管理" code="OP_ADMIN"/>
+	</resource>
+
+	<resource title="商品" code="RES_PRODUCTS">
+		<op title="添加" code="OP_ADD"/>
+		<op title="编辑" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="商品分类" code="RES_PRODUCTCATES">
+		<op title="添加" code="OP_ADD"/>
+		<op title="编辑" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="礼品" code="RES_GIFTS">
+		<op title="添加" code="OP_ADD"/>
+		<op title="编辑" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+		<op title="兑换" code="OP_CHARGE"/>
+	</resource>
+	<resource title="订单" code="RES_ORDER">
+		<op title="编辑" code="OP_EDIT"/>
+		<op title="修改地址" code="OP_ADDRESS_EDIT"/>
+		<op title="删除明细" code="OP_ITEMS_REMOVE"/>
+		<op title="修改明细" code="OP_ITEMS_EDIT"/>
+		<op title="订单处理" code="OP_OPERATE"/>
+	</resource>
+
+	<resource title="文章" code="RES_ARTICLES">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="会员" code="RES_MEMBER">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+		<op title="加粉" code="OP_ADDFANS"/>
+		<op title="充值" code="OP_RECHARGE"/>
+	</resource>
+	<resource title="艺术家" code="RES_ARTISTORS">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="标签" code="RES_TAGS">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="专辑" code="RES_ALBUMS">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="课程" code="RES_COURSES">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+		<op title="字幕管理" code="OP_SRTADMIN"/>
+	</resource>
+	<resource title="曲谱" code="RES_TABS">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="MTV视频" code="RES_MTV">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+		<op title="字幕管理" code="OP_SRTADMIN"/>
+	</resource>
+	<resource title="活动" code="RES_ACTIVITY">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="广告" code="RES_ADS">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="链接跟踪" code="RES_URL">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+	<resource title="文章分类" code="RES_ARTICLESCATES" idField="id" nameField="name" model="Kuga\Extension\Aps\Model\ArticleCateModel">
+		<op title="添加" code="OP_ADD"/>
+		<op title="修改" code="OP_EDIT"/>
+		<op title="删除" code="OP_REMOVE"/>
+	</resource>
+</privileges>

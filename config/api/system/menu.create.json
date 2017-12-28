@@ -23,26 +23,10 @@
             "name":"父级菜单ID"
         },
         {
-            "param":"controller",
+            "param":"url",
             "required":true,
             "default":"",
-            "name":"controller名",
-            "type":"String",
-            "description":""
-        },
-        {
-            "param":"action",
-            "required":true,
-            "default":"",
-            "name":"action名",
-            "type":"String",
-            "description":""
-        },
-        {
-            "param":"parameter",
-            "required":false,
-            "default":"",
-            "name":"参数",
+            "name":"url网址",
             "type":"String",
             "description":""
         },

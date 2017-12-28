@@ -26,15 +26,22 @@ $_CONFIG['system']['locale']       = 'zh_CN';
 
 //redis配置
 $_CONFIG['redis']['host'] = 'localhost';
-$_CONFIG['redis']['port'] = '6369';
+$_CONFIG['redis']['port'] = '6379';
 $_CONFIG['redis']['password'] = '';
 $_CONFIG['redis']['db'] = 0;
 //用的队列程序
 $_CONFIG['queue']['adapter'] = 'redis';
 
 
+$cache['cache']['slow']['engine'] = 'file';
+$cache['slow']['option']['cacheDir'] = '/tmp';
+$cache['slow']['option']['lifetime'] = 86400;
+$cache['fast']['engine'] = 'redis';
+$cache['fast']['option'] = $_CONFIG['redis'];
+$_CONFIG['cache'] = $cache;
+
 //API KEY配置文件
-$_CONFIG['apiKeys'] = QING_ROOT_PATH.'/config/apikeys.config.json';
+$_CONFIG['apiKeys'] = CONFIG_DIR.'/apikeys.config.json';
 
 //文件存储配置，具体用哪一个在env.php中
 $_CONFIG['fileStorage']['adapter'] = 'aliyun'; //值为aliyun或localfile
