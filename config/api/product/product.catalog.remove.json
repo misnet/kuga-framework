@@ -1,0 +1,25 @@
+{
+  "id":"product.catalog.remove",
+  "name":"删除类目",
+  "description":"删除类目",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"itemCatalog.remove",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "name":"类目ID",
+      "type":"Integer",
+      "description":""
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

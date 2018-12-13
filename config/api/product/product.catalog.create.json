@@ -1,0 +1,50 @@
+{
+  "id":"product.catalog.create",
+  "name":"创建类目",
+  "description":"创建类目",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"itemCatalog.create",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"name",
+      "required":true,
+      "default":"",
+      "name":"类目名称",
+      "type":"String",
+      "description":""
+    },
+    {
+      "param":"parentId",
+      "required":false,
+      "default":0,
+      "type":"Integer",
+      "description":"",
+      "name":"父级类目ID"
+    },
+    {
+      "param":"code",
+      "required":true,
+      "default":"",
+      "name":"类目编码",
+      "type":"String",
+      "description":""
+    },
+
+    {
+      "param":"sortWeight",
+      "required":false,
+      "default":"0",
+      "name":"排序权重",
+      "type":"Integer",
+      "description":""
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

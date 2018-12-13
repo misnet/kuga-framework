@@ -6,5 +6,7 @@ var/*
 public/apidocs
 config/config.php
 config/aliyunoss/config.json
+config/session.config.json
 class/composer.lock
 class/vendor
+.idea

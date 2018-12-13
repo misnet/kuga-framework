@@ -7,7 +7,7 @@
  */
 namespace Qing\Api\Controllers;
 use Kuga\Core\Api\ApiService;
-use Kuga\Core\Api\Request;
+use Kuga\Core\Api\Request as KugaRequest;
 class V3Controller extends ControllerBase{
     /**
      * API服务网关地址，这种书写方式有利于nginx的rewrite分发
@@ -26,7 +26,8 @@ class V3Controller extends ControllerBase{
         $contentType = $this->request->getContentType();
         //post json格式时
         if(preg_match('/application\/json/',$contentType)){
-            $requestData = $this->request->getJsonRawBody();
+            $requestData = file_get_contents('php://input');
+            $requestData = json_decode($requestData,true);
             $requestData = \Qing\Lib\Utils::objectToArray($requestData);
         }else{
             //post 表单格式时
@@ -40,7 +41,7 @@ class V3Controller extends ControllerBase{
             $locale='zh_CN';
         }
         $this->getDI()->getShared('translator')->setLocale(LC_MESSAGES, $locale,$this->config->system->charset);
-        $requestObject = new Request($requestData);
+        $requestObject = new KugaRequest($requestData);
         $requestObject->setOrigRequest($this->request);
         ApiService::setDi($this->getDI());
         ApiService::initApiJsonConfigFile(QING_ROOT_PATH.'/config/api/api.json');

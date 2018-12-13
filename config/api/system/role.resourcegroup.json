@@ -12,7 +12,34 @@
             "type":"Array",
             "description":"权限资源组",
             "responseItem":{
+                "code":{
+                    "type":"String",
+                    "description":"资源代码",
+                    "sample":"RES_ARTICLE"
+                },
 
+                "text":{
+                    "type":"String",
+                    "description":"资源名称",
+                    "sample":"文章"
+                },
+                "op":{
+                    "type":"Array",
+                    "description":"操作集",
+                    "responseItem":{
+                        "code":{
+                            "type":"String",
+                            "description":"资源代码",
+                            "sample":"RES_ARTICLE"
+                        },
+
+                        "text":{
+                            "type":"String",
+                            "description":"资源名称",
+                            "sample":"文章"
+                        }
+                    }
+                }
             }
         }
     }

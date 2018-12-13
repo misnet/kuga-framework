@@ -1,0 +1,105 @@
+{
+  "id": "product.catalog.list",
+  "name": "获取类目列表",
+  "description": "获取类目列表",
+  "namespace": "Kuga\\Api\\Console",
+  "method": "itemCatalog.listCatalogs",
+  "accessLevel": 1,
+  "request": [
+    {
+      "param": "parentId",
+      "required": false,
+      "default": 0,
+      "name": "上一级类目ID",
+      "type": "Integer",
+      "description": "上一级类目ID"
+    },
+    {
+      "param": "loadTree",
+      "required": false,
+      "default": false,
+      "name": "是否载入整个树",
+      "type": "Boolean",
+      "description": "是否载入整个树"
+    }
+  ],
+  "response": {
+    "data": {
+      "type": "Array",
+      "responseItem": {
+        "id": {
+          "type": "Integer",
+          "sample": 1,
+          "description": "类目ID"
+        },
+        "name": {
+          "type": "String",
+          "sample": "服装",
+          "description": "类目名称"
+        },
+        "createTime": {
+          "type": "Integer",
+          "sample": 1405906107,
+          "description": "创建时间"
+        },
+        "code": {
+          "type": "String",
+          "sample": "AB",
+          "description": "类目编码"
+        },
+        "parentId": {
+          "type": "Integer",
+          "sample": 2,
+          "description": "上一级类目ID"
+        },
+        "isLeaf":{
+          "type": "Boolean",
+          "sample": "false",
+          "description": "是否是叶子节点"
+        },
+        "children":{
+          "type":"Array",
+          "description":"子节点",
+          "responseItem":{
+            "id": {
+              "type": "Integer",
+              "sample": 1,
+              "description": "类目ID"
+            },
+            "name": {
+              "type": "String",
+              "sample": "服装",
+              "description": "类目名称"
+            },
+            "createTime": {
+              "type": "Integer",
+              "sample": 1405906107,
+              "description": "创建时间"
+            },
+            "code": {
+              "type": "String",
+              "sample": "AB",
+              "description": "类目编码"
+            },
+            "parentId": {
+              "type": "Integer",
+              "sample": 2,
+              "description": "上一级类目ID"
+            },
+            "sortWeight": {
+              "type": "Integer",
+              "sample": 2,
+              "description": "排序权重，越大越前面"
+            },
+            "isLeaf":{
+              "type": "Boolean",
+              "sample": "false",
+              "description": "是否是叶子节点"
+            }
+          }
+        }
+      },
+      "description": "数据列表"
+    }
+  }
+}

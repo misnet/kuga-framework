@@ -8,5 +8,10 @@
         "name":"系统API",
         "summary":"提供了系统级的相关API",
         "apiFiles":"system/*.json"
+    },
+    {
+        "name":"产品API",
+        "summary":"产品相关API",
+        "apiFiles":"product/*.json"
     }
 ]

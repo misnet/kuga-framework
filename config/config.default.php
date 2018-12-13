@@ -29,8 +29,13 @@ $_CONFIG['redis']['host'] = 'localhost';
 $_CONFIG['redis']['port'] = '6379';
 $_CONFIG['redis']['password'] = '';
 $_CONFIG['redis']['db'] = 0;
+$_CONFIG['redis']['statsKey']  = 'KG';
+
 //用的队列程序
 $_CONFIG['queue']['adapter'] = 'redis';
+
+//权限资源配置文件
+$_CONFIG['acc'] = CONFIG_DIR.'/acc.xml';
 
 
 $cache['cache']['slow']['engine'] = 'file';
@@ -59,6 +64,9 @@ $_CONFIG['fileStorage']['aliyun'] = [
 $_CONFIG['sms']['adapter']  = 'tencent'; //采用腾讯的，要用阿里云的，改为aliyun
 $_CONFIG['sms']['tencent']  = CONFIG_DIR.'/sms/tencent.config.json';
 $_CONFIG['sms']['aliyun']   = CONFIG_DIR.'/sms/aliyun.config.json';
+
+//session配置
+$_CONFIG['session']=CONFIG_DIR.'/session.config.json';
 
 //多域名配置
 //当访问a.xxx.com和访问api.xxx.com一样效果
