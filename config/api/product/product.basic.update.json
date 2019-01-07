@@ -1,0 +1,118 @@
+{
+  "id":"product.basic.update",
+  "name":"修改商品",
+  "description":"根据商品ID修改商品信息",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"product.update",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "type":"Integer",
+      "description":"商品id"
+    },
+    {
+      "param":"title",
+      "required":true,
+      "default":0,
+      "type":"String",
+      "description":"商品名称"
+    },
+
+    {
+      "param":"sellerPoint",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"卖点"
+    },
+
+
+
+    {
+      "param":"listingPrice",
+      "required":true,
+      "default":"",
+      "type":"float",
+      "description":"零售价"
+    },
+    {
+      "param":"isOnline",
+      "required":false,
+      "default":"0",
+      "type":"float",
+      "description":"是否上架,1是，0不是"
+    },
+
+
+    {
+      "param":"barcode",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"创建时要指定，创建完后不可修改"
+    },
+
+
+    {
+      "param":"originBarcode",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"出厂款号"
+    },
+
+
+
+    {
+      "param":"content",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"PC版内容描述"
+    },
+
+
+    {
+      "param":"mobileContent",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"手机版内容描述"
+    },
+
+
+    {
+      "param":"skuList",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"JSON格式的SKU属性列表"
+    },
+    {
+      "param":"imgList",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"JSON格式的图片列表"
+    },
+
+
+    {
+      "param":"propList",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"JSON格式属性列表"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

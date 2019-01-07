@@ -29,20 +29,20 @@
       "description":"",
       "name":"父级类目ID"
     },
-    {
-      "param":"code",
-      "required":true,
-      "default":"",
-      "name":"类目编码",
-      "type":"String",
-      "description":""
-    },
 
     {
       "param":"sortWeight",
       "required":false,
       "default":"0",
       "name":"排序权重",
+      "type":"Integer",
+      "description":""
+    },
+    {
+      "param":"propsetId",
+      "required":false,
+      "default":"0",
+      "name":"使用的属性集ID",
       "type":"Integer",
       "description":""
     }

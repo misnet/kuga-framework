@@ -76,10 +76,10 @@
               "sample": 1405906107,
               "description": "创建时间"
             },
-            "code": {
-              "type": "String",
-              "sample": "AB",
-              "description": "类目编码"
+            "propsetId": {
+              "type": "Integer",
+              "sample": "11",
+              "description": "属性集ID"
             },
             "parentId": {
               "type": "Integer",

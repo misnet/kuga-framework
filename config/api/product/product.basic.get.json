@@ -1,18 +1,17 @@
 {
-  "id":"product.propvalue.remove",
-  "name":"删除属性值",
-  "description":"删除属性值",
+  "id":"product.basic.get",
+  "name":"获取商品",
+  "description":"获取商品",
   "namespace":"Kuga\\Api\\Console",
-  "method":"props.removePropValue",
+  "method":"product.getProduct",
   "accessLevel": 1,
   "request":[
     {
       "param":"id",
-      "required":true,
+      "required":false,
       "default":"",
-      "name":"属性值ID",
       "type":"Integer",
-      "description":""
+      "description":"商品id"
     }
   ],
   "response":{

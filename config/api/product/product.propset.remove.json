@@ -1,0 +1,25 @@
+{
+  "id":"product.propset.remove",
+  "name":"删除属性集合",
+  "description":"删除属性集合",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"props.removePropSet",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "name":"属性集合ID",
+      "type":"Integer",
+      "description":""
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

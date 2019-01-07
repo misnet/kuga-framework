@@ -17,7 +17,8 @@
     "require": {
         "php": ">=7.0",
         "anchnet/aliyun-openapi-php-sdk":"dev-master",
-        "kuga/openapi-sdk":">=0.1"
+        "kuga/openapi-sdk":">=0.1.10",
+        "kuga/qing": ">=0.8.4"
     },
     "repositories": {
         "packagist": {

@@ -1,0 +1,134 @@
+{
+  "id":"product.basic.create",
+  "name":"商品的创建与保存",
+  "description":"商品的创建与保存",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"product.create",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":false,
+      "default":"",
+      "type":"Integer",
+      "description":"商品id"
+    },
+    {
+      "param":"title",
+      "required":true,
+      "default":0,
+      "type":"String",
+      "description":"商品名称"
+    },
+
+    {
+      "param":"sellerPoint",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"卖点"
+    },
+
+
+    {
+      "param":"propsetId",
+      "required":false,
+      "default":"0",
+      "type":"Integer",
+      "description":"使用的属性集ID"
+    },
+
+
+    {
+      "param":"listingPrice",
+      "required":true,
+      "default":"",
+      "type":"float",
+      "description":"零售价"
+    },
+    {
+      "param":"isOnline",
+      "required":false,
+      "default":"0",
+      "type":"float",
+      "description":"是否上架,1是，0不是"
+    },
+
+
+    {
+      "param":"barcode",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"创建时要指定，创建完后不可修改"
+    },
+
+
+    {
+      "param":"originBarcode",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"出厂款号"
+    },
+
+
+    {
+      "param":"catalogId",
+      "required":true,
+      "default":"",
+      "type":"Integer",
+      "description":"所属类目ID"
+    },
+
+
+    {
+      "param":"content",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"PC版内容描述"
+    },
+
+
+    {
+      "param":"mobileContent",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"手机版内容描述"
+    },
+
+
+    {
+      "param":"skuList",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"JSON格式的SKU属性列表"
+    },
+    {
+      "param":"imgList",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"JSON格式的图片列表"
+    },
+
+
+    {
+      "param":"propList",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"JSON格式属性列表"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

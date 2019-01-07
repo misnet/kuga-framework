@@ -1,9 +1,9 @@
 {
-    "id":"product.propkey.list",
-    "name":"属性列表",
-    "description":"指定类目ID或不指定来获取属性列表",
+    "id":"product.propset.list",
+    "name":"属性集合列表",
+    "description":"取得属性集合列表",
     "namespace":"Kuga\\Api\\Console",
-    "method":"props.listProps",
+    "method":"props.listPropSets",
     "accessLevel": 1,
     "request":[
         {
@@ -34,32 +34,17 @@
                         "id":{
                             "type":"Integer",
                             "sample":1,
-                            "description":"属性ID"
+                            "description":"属性集合ID"
                         },
                         "name":{
                             "type":"String",
-                            "sample":"颜色",
-                            "description":"属性名称"
+                            "sample":"服装",
+                            "description":"集合名称"
                         },
-                        "isColor":{
+                        "cntPropKey":{
                             "type":"Integer",
-                            "sample":0,
-                            "description":"是否是颜色，值有0和1，1表示是，0表示否"
-                        },
-                        "formType":{
-                            "type":"Integer",
-                            "sample":1,
-                            "description":"表单形式，1输入框，2单选，3多选，4多行输入框"
-                        },
-                        "summary":{
-                            "type":"String",
-                            "sample":"",
-                            "description":"描述"
-                        },
-                        "cntValues":{
-                            "type":"Integer",
-                            "sample":9,
-                            "description":"属性下的属性值数量"
+                            "sample":"9",
+                            "description":"属性集合中的属性个数"
                         }
                     },
                     "description":"数据列表"

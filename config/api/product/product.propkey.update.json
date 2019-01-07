@@ -22,14 +22,6 @@
       "description":""
     },
     {
-      "param":"catalogId",
-      "required":true,
-      "default":"",
-      "type":"Integer",
-      "description":"",
-      "name":"类目ID"
-    },
-    {
       "param":"isColor",
       "required":false,
       "default":"0",
@@ -38,31 +30,6 @@
       "description":""
     },
     {
-      "param":"isApplyCode",
-      "required":false,
-      "default":"0",
-      "name":"是否应用于编码",
-      "type":"integer",
-      "description":""
-    },
-    {
-      "param":"isSaleProp",
-      "required":false,
-      "default":"0",
-      "name":"是否是销售属性",
-      "type":"integer",
-      "description":""
-    },
-    {
-      "param":"usedForSearch",
-      "required":false,
-      "default":"0",
-      "name":"是否应用于搜索条件",
-      "type":"integer",
-      "description":""
-    },
-
-    {
       "param":"formType",
       "required":true,
       "default":"0",
@@ -70,13 +37,22 @@
       "type":"integer",
       "description":"1:单选，2:单行输入，3:多选，4:多行输入"
     },
+
     {
-      "param":"sortWeight",
+      "param":"summary",
       "required":false,
-      "default":"0",
-      "name":"排序权重",
-      "type":"Integer",
-      "description":""
+      "default":"",
+      "name":"描述",
+      "type":"String",
+      "description":"对属性的描述"
+    },
+    {
+      "param":"valueList",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"",
+      "name":"JSON格式属性值列表"
     }
   ],
   "response":{

@@ -1,0 +1,31 @@
+{
+  "id":"product.basic.remove",
+  "name":"删除商品",
+  "description":"根据商品id删除商品",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"product.remove",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "type":"Integer",
+      "description":"商品id"
+    },
+    {
+      "param":"isPhysical",
+      "required":false,
+      "default":"0",
+      "type":"Integer",
+      "description":"是否物理删除商品，1是，0不是，默认为0"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

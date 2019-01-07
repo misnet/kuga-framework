@@ -1,0 +1,40 @@
+{
+  "id":"product.propset.update",
+  "name":"修改属性集",
+  "description":"修改属性集",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"props.updatePropSet",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "name":"属性集ID",
+      "type":"Integer",
+      "description":"以此字段来定位要修改的记录"
+    },{
+      "param":"name",
+      "required":true,
+      "default":"",
+      "name":"属性集名称",
+      "type":"String",
+      "description":""
+    },
+    {
+      "param":"propkeyList",
+      "required":false,
+      "default":"",
+      "name":"属性集内的属性列表",
+      "type":"String",
+      "description":"JSON格式，例如[{\"propkeyName\":\"颜色\",\"propkeyId\":\"1\",\"id\":\"new-0.8831949254303664\",\"usedForSearch\":0,\"isApplyCode\":0,\"isRequired\":1,\"isSaleProp\":0,\"disabled\":0},{\"propkeyName\":\"尺码\",\"propkeyId\":\"2\",\"id\":\"new-0.24524465056470968\",\"usedForSearch\":0,\"isApplyCode\":0,\"isRequired\":1,\"isSaleProp\":1,\"disabled\":0}]"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}
