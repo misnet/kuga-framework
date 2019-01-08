@@ -1,0 +1,102 @@
+{
+  "id":"store.basic.update",
+  "name":"修改店仓",
+  "description":"根据ID修改一个门店或仓库",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"store.updateStore",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":0,
+      "type":"String",
+      "description":"店仓id"
+    },
+    {
+      "param":"name",
+      "required":true,
+      "default":0,
+      "type":"String",
+      "description":"店仓名称"
+    },
+
+    {
+      "param":"isRetail",
+      "required":false,
+      "default":"0",
+      "type":"integer",
+      "description":"是否零售店，1是，0不是"
+    },
+
+
+    {
+      "param":"disabled",
+      "required":false,
+      "default":"0",
+      "type":"Integer",
+      "description":"是否禁用，1是，0不是，默认0"
+    },
+
+    {
+      "param":"provinceId",
+      "required":false,
+      "default":"0",
+      "type":"integer",
+      "description":"省份ID"
+    },
+    {
+      "param":"cityId",
+      "required":false,
+      "default":"0",
+      "type":"integer",
+      "description":"城市ID"
+    },
+    {
+      "param":"countryId",
+      "required":false,
+      "default":"0",
+      "type":"integer",
+      "description":"国家ID"
+    },
+    {
+      "param":"countyId",
+      "required":false,
+      "default":"0",
+      "type":"integer",
+      "description":"区县ID"
+    },
+    {
+      "param":"townId",
+      "required":false,
+      "default":"0",
+      "type":"integer",
+      "description":"镇或街道ID"
+    },
+
+
+    {
+      "param":"summary",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"摘要描述，不超250个字符"
+    },
+
+
+    {
+      "param":"address",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"详细地址"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

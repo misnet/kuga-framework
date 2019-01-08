@@ -1,0 +1,24 @@
+{
+  "id":"store.basic.remove",
+  "name":"删除店仓",
+  "description":"删除一个门店或仓库",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"store.removeStore",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "type":"Integer",
+      "description":"店仓ID"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

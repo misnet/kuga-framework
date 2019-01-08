@@ -10,8 +10,8 @@
         "apiFiles":"system/*.json"
     },
     {
-        "name":"产品API",
-        "summary":"产品相关API",
-        "apiFiles":"product/*.json"
+        "name":"商城API",
+        "summary":"商城相关API",
+        "apiFiles":"shop/*.json"
     }
 ]
