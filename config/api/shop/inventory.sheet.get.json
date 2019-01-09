@@ -1,0 +1,24 @@
+{
+  "id":"inventory.sheet.get",
+  "name":"取得出入库单",
+  "description":"根据单ID取得一个出入库单",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"inventory.getSheet",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "type":"Integer",
+      "description":"单据的ID"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

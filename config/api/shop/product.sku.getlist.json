@@ -1,0 +1,60 @@
+{
+  "id":"product.sku.getlist",
+  "name":"取得多个SKU信息",
+  "description":"根据指定的多个以逗号分隔的SKU ID 取得SKU相关信息",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"product.getSkuInfoBySnIdList",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"ids",
+      "required":true,
+      "default":"",
+      "type":"String",
+      "description":"SKU id，多个以逗号分隔"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Array",
+      "responseItem": {
+        "id":{
+          "type":"Integer",
+          "sample":1,
+          "description":"SKU ID"
+        },
+        "productId":{
+          "type":"Integer",
+          "sample":1,
+          "description":"商品 ID"
+        },
+        "title":{
+          "type":"String",
+          "sample":"",
+          "description":"商品名称"
+        },
+        "price":{
+          "type":"Float",
+          "sample":"0.99",
+          "description":"售价"
+        },
+        "cost":{
+          "type":"Float",
+          "sample":0.01,
+          "description":"成本价"
+        },
+        "originalSkuId":{
+          "type":"String",
+          "sample":"",
+          "description":"原厂SKU 编号"
+        },
+        "skuString":{
+          "type":"String",
+          "sample": "尺码：XL；颜色：红色",
+          "description": "SKU字串"
+        }
+      },
+      "description":""
+    }
+  }
+}

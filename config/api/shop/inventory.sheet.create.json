@@ -1,0 +1,75 @@
+{
+  "id":"inventory.sheet.create",
+  "name":"新建出入库单",
+  "description":"创建一个出入库单",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"inventory.createSheet",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"sheetCode",
+      "required":true,
+      "default":0,
+      "type":"String",
+      "description":"单号"
+    },
+
+    {
+      "param":"sheetTime",
+      "required":false,
+      "default":"0",
+      "type":"String",
+      "description":"出入库时间，格式为YYYY-mm-dd HH:ii:ss或传精确至秒的unix时间戳"
+    },
+
+
+    {
+      "param":"sheetType",
+      "required":false,
+      "default":"1",
+      "type":"Integer",
+      "description":"是否禁用，1入库，2出库"
+    },
+
+
+    {
+      "param":"sheetDesc",
+      "required":false,
+      "default":"0",
+      "type":"String",
+      "description":"单据描述"
+    },
+    {
+      "param":"storeId",
+      "required":true,
+      "default":"",
+      "type":"integer",
+      "description":"出入的店仓ID"
+    },{
+      "param":"itemList",
+      "require":false,
+      "default": "",
+      "type":"JsonString",
+      "requestItemType":"Array",
+      "requestItem":[
+        {
+          "param":"skuId",
+          "type":"Integer",
+          "description":"SKU ID"
+        },
+        {
+          "param": "qty",
+          "type": "integer",
+          "description": "数量"
+        }
+      ]
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}
