@@ -1,0 +1,28 @@
+{
+  "id":"product.stats.overview",
+  "name":"获取商品",
+  "description":"获取商品",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"ShopStats.overview",
+  "accessLevel": 1,
+  "request":[
+  ],
+  "response":{
+    "data":{
+      "type":"Object",
+      "description":"统计对象",
+      "responseItem": {
+        "productNum": {
+          "type":"Integer",
+          "sample":1,
+          "description":"商品款数"
+        },
+        "skuNum": {
+          "type":"Integer",
+          "sample":1,
+          "description":"SKU商品总数"
+        }
+      }
+    }
+  }
+}

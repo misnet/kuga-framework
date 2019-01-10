@@ -1,0 +1,24 @@
+{
+  "id":"inventory.sheet.checked",
+  "name":"审通过出入库单",
+  "description":"将一个出入库单设为审核通过，一旦通过后，这个单据将不可以修改或删除，同时库存将根据单据上的明细调整",
+  "namespace":"Kuga\\Api\\Console",
+  "method":"inventory.checkedSheet",
+  "accessLevel": 1,
+  "request":[
+    {
+      "param":"id",
+      "required":true,
+      "default":"",
+      "type":"String",
+      "description":"单ID"
+    }
+  ],
+  "response":{
+    "data":{
+      "type":"Boolean",
+      "sample":true,
+      "description":"成功返回true，失败返回false"
+    }
+  }
+}

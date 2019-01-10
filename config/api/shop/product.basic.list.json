@@ -28,6 +28,13 @@
       "default":-1,
       "type":"Integer",
       "description":"是否上架，-1表示上架+下架，1表示上架，0表示下架"
+    },
+    {
+      "param":"keyword",
+      "required":false,
+      "default":"",
+      "type":"String",
+      "description":"商品名称或条款关键词"
     }
   ],
   "response":{
