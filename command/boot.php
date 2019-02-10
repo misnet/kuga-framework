@@ -2,9 +2,11 @@
 $di     = new \Phalcon\DI\FactoryDefault\Cli();
 include_once dirname(dirname(__FILE__)).'/env.php';
 set_time_limit(0);
+$loader = new \Phalcon\Loader();
 $loader->registerDirs([
     __DIR__.'/tasks'
 ]);
+$loader->register();
 
 $console = new \Phalcon\Cli\Console();
 $console->setDI($di);
@@ -21,7 +23,10 @@ foreach ($argv as $k => $arg) {
 }
 try {
     $console->handle($arguments);
-} catch (\Exception $e) {
+} catch (\Phalcon\Exception $e) {
     echo $e->getMessage();
     exit(255);
+}catch (\Throwable $throwable) {
+    fwrite(STDERR, $throwable->getMessage() . PHP_EOL);
+    exit(1);
 }

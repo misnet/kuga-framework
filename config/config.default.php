@@ -61,7 +61,7 @@ $_CONFIG['fileStorage']['aliyun'] = [
 ];
 
 //短信配置
-$_CONFIG['sms']['adapter']  = 'tencent'; //采用腾讯的，要用阿里云的，改为aliyun
+$_CONFIG['sms']['adapter']  = 'aliyun'; //采用腾讯的，要用阿里云的，改为aliyun
 $_CONFIG['sms']['tencent']  = CONFIG_DIR.'/sms/tencent.config.json';
 $_CONFIG['sms']['aliyun']   = CONFIG_DIR.'/sms/aliyun.config.json';
 
@@ -74,7 +74,7 @@ $_CONFIG['session']=CONFIG_DIR.'/session.config.json';
 //    'api'=>'a'
 //];
 //测试模式
-$_CONFIG['testmodel'] = false;
+$_CONFIG['testmodel'] = true;
 
 //调试模式，非预见性错误或程序错误时，api会显示debug信息
 $_CONFIG['debug']     = true;

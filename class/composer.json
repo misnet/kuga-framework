@@ -10,7 +10,7 @@
     "authors": [
         {
             "name": "Donny Wong",
-            "homepage":"http://www.tapy.org",
+            "homepage": "http://www.tapy.org",
             "email":"dony@tapy.org"
         }
     ],
@@ -18,7 +18,8 @@
         "php": ">=7.0",
         "anchnet/aliyun-openapi-php-sdk":"dev-master",
         "kuga/openapi-sdk":">=0.1.10",
-        "kuga/qing": ">=0.8.4"
+        "kuga/qing": ">=0.8.4",
+        "alibabacloud/client":">=1.0.7"
     },
     "repositories": {
         "packagist": {
